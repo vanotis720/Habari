@@ -1,107 +1,34 @@
-<!-- partial:partials/_navbar.html -->
-<nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-    <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-		<a class="navbar-brand brand-logo mr-5" href="{{ route('home') }}"><img src="{{ asset('images/sept.svg') }}" class="mr-2" alt="logo"/></a>
-		<a class="navbar-brand brand-logo-mini" href="{{ route('home') }}"><img src="{{ asset('images/sept-mini.svg') }}" alt="logo"/></a>
+<div class="row align-items-center">
+    <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
+        <!-- sticky -->
+        <div class="sticky-logo">
+            <a href="index.html"><img src="{{ asset('assets/logo-sticky.png') }}" alt=""></a>
+        </div>
+        <!-- Main-menu -->
+        <div class="main-menu d-none d-md-block">
+            <nav>
+                <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-		<button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-			<span class="icon-menu"></span>
-		</button>
-		<ul class="navbar-nav mr-lg-2">
-			<li class="nav-item nav-search d-none d-lg-block">
-			<div class="input-group">
-				<div class="input-group-prepend hover-cursor" id="navbar-search-icon">
-				<span class="input-group-text" id="search">
-					<i class="icon-search"></i>
-				</span>
-				</div>
-				<form action="{{ route('search') }}" method="GET">
-					<input name="q" type="text" class="form-control" id="navbar-search-input" placeholder="Rechercher un eleve" aria-label="search" aria-describedby="search">
-				</form>
-			</div>
-			</li>
-		</ul>
-		<ul class="navbar-nav navbar-nav-right">
-			{{-- <li class="nav-item dropdown">
-				<a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-					<i class="icon-bell mx-0"></i>
-					<span class="count"></span>
-				</a>
-				<div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-					<p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
-					<a class="dropdown-item preview-item">
-					<div class="preview-thumbnail">
-						<div class="preview-icon bg-success">
-						<i class="ti-info-alt mx-0"></i>
-						</div>
-					</div>
-					<div class="preview-item-content">
-						<h6 class="preview-subject font-weight-normal">Application Error</h6>
-						<p class="font-weight-light small-text mb-0 text-muted">
-						Just now
-						</p>
-					</div>
-					</a>
-					<a class="dropdown-item preview-item">
-					<div class="preview-thumbnail">
-						<div class="preview-icon bg-warning">
-						<i class="ti-settings mx-0"></i>
-						</div>
-					</div>
-					<div class="preview-item-content">
-						<h6 class="preview-subject font-weight-normal">Settings</h6>
-						<p class="font-weight-light small-text mb-0 text-muted">
-						Private message
-						</p>
-					</div>
-					</a>
-					<a class="dropdown-item preview-item">
-					<div class="preview-thumbnail">
-						<div class="preview-icon bg-info">
-						<i class="ti-user mx-0"></i>
-						</div>
-					</div>
-					<div class="preview-item-content">
-						<h6 class="preview-subject font-weight-normal">New user registration</h6>
-						<p class="font-weight-light small-text mb-0 text-muted">
-						2 days ago
-						</p>
-					</div>
-					</a>
-				</div>
-			</li> --}}
-			<li class="nav-item nav-profile dropdown">
-				<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-					<img src="{{ (Auth::user()->avatar != null) ? asset('storage/'.Auth::user()->avatar) : asset('images/faces/profile-cropped-11.png') }}" alt="profile"/>
-				</a>
-				<div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-					<a href="#" class="dropdown-item">
-						<i class="ti-user text-primary"></i>
-						<h4>{{ Auth::user()->username }}</h4>
-					</a>
-					<a href="{{ route('profil') }}" class="dropdown-item">
-						<i class="ti-settings text-primary"></i>
-						Mon Profil
-					</a>
-					<a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout_form').submit();">
-						<i class="ti-power-off text-primary"></i>
-						Me deconnecter
-					</a>
-					<form id="logout_form" action="{{ route('logout') }}" method="POST" class="d-none">
-						@csrf
-					</form>
-				</div>
-			</li>
-			{{-- <li class="nav-item nav-settings d-none d-lg-flex">
-				<a class="nav-link" href="#">
-					<i class="icon-ellipsis"></i>
-				</a>
-			</li> --}}
-		</ul>
-		<button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-				<span class="icon-menu"></span>
-		</button>
+    <div class="col-xl-2 col-lg-2 col-md-4">
+        <div class="header-right-btn f-right d-none d-lg-block">
+            <i class="fas fa-search special-tag"></i>
+            <div class="search-box">
+                <form action="#">
+                    <input type="text" placeholder="Recherche">
+                </form>
+            </div>
+        </div>
     </div>
-  </nav>
-  <!-- partial -->
+    <!-- Mobile Menu -->
+    <div class="col-12">
+        <div class="mobile_menu d-block d-md-none"></div>
+    </div>
+</div>

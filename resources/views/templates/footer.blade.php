@@ -1,30 +1,162 @@
-<!-- plugins:js -->
-<script src="{{ asset('vendors/js/vendor.bundle.base.js')}}"></script>
-<!-- endinject -->
-<!-- Plugin js for this page -->
-<script src="{{ asset('vendors/chart.js/Chart.min.js')}}"></script>
-<script src="{{ asset('vendors/datatables.net/jquery.dataTables.js')}}"></script>
-<script src="{{ asset('vendors/datatables.net-bs4/dataTables.bootstrap4.js')}}"></script>
-<script src="{{ asset('js/dataTables.select.min.js') }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js" integrity="sha512-8QFTrG0oeOiyWo/VM9Y8kgxdlCryqhIxVeRpWSezdRRAvarxVtwLnGroJgnVW9/XBRduxO/z1GblzPrMQoeuew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<footer>
+    <!-- Footer Start-->
+    <div class="footer-area footer-padding fix">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-xl-5 col-lg-5 col-md-7 col-sm-12">
+                    <div class="single-footer-caption">
+                        <div class="single-footer-caption">
+                            <!-- logo -->
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="{{ asset('assets/logo.png') }}" alt=""></a>
+                            </div>
+                            <div class="footer-tittle">
+                                <div class="footer-pera">
+                                    <p>Suscipit mauris pede for con sectetuer sodales adipisci for cursus fames
+                                        lectus tempor da blandit gravida sodales Suscipit mauris pede for con
+                                        sectetuer sodales adipisci for cursus fames lectus tempor da blandit gravida
+                                        sodales Suscipit mauris pede for sectetuer.</p>
+                                </div>
+                            </div>
+                            <!-- social -->
+                            <div class="footer-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4  col-sm-6">
+                    <div class="single-footer-caption mt-60">
+                        <div class="footer-tittle">
+                            <h4>Newsletter</h4>
+                            <p>Heaven fruitful doesn't over les idays appear creeping</p>
+                            <!-- Form -->
+                            <div class="footer-form">
+                                <div id="mc_embed_signup">
+                                    <form target="_blank"
+                                        action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                        method="get" class="subscribe_form relative mail_part">
+                                        <input type="email" name="email" id="newsletter-form-email"
+                                            placeholder="Email Address" class="placeholder hide-on-focus"
+                                            onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = ' Email Address '">
+                                        <div class="form-icon">
+                                            <button type="submit" name="submit" id="newsletter-submit"
+                                                class="email_icon newsletter-submit button-contactForm"><img
+                                                    src="{{ asset('assets/app/img/logo/form-iocn.png') }}"
+                                                    alt=""></button>
+                                        </div>
+                                        <div class="mt-10 info"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                    <div class="single-footer-caption mb-50 mt-60">
+                        <div class="footer-tittle">
+                            <h4>Instagram Feed</h4>
+                        </div>
+                        <div class="instagram-gellay">
+                            <ul class="insta-feed">
+                                <li><a href="#"><img src="{{ asset('assets/app/img/post/instra1.jpg') }}" alt=""></a>
+                                </li>
+                                <li><a href="#"><img src="{{ asset('assets/app/img/post/instra2.jpg') }}" alt=""></a>
+                                </li>
+                                <li><a href="#"><img src="{{ asset('assets/app/img/post/instra3.jpg') }}" alt=""></a>
+                                </li>
+                                <li><a href="#"><img src="{{ asset('assets/app/img/post/instra4.jpg') }}" alt=""></a>
+                                </li>
+                                <li><a href="#"><img src="{{ asset('assets/app/img/post/instra5.jpg') }}" alt=""></a>
+                                </li>
+                                <li><a href="#"><img src="{{ asset('assets/app/img/post/instra6.jpg') }}" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-bottom aera -->
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="footer-border">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="footer-copy-right">
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script> All rights reserved | This template is made with <i
+                                    class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                    target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-menu f-right">
+                            <ul>
+                                <li><a href="#">Terms of use</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End-->
+</footer>
 
-<!-- End plugin js for this page -->
-<!-- inject:js -->
-<script src="{{ asset('js/off-canvas.js') }}"></script>
-<script src="{{ asset('js/hoverable-collapse.js') }}"></script>
-<script src="{{ asset('js/template.js') }}"></script>
-<script src="{{ asset('js/settings.js') }}"></script>
-<script src="{{ asset('js/todolist.js') }}"></script>
-<script src="{{ asset('js/file-upload.js') }}"></script>
+<!-- JS here -->
 
-<!-- endinject -->
-<!-- Custom js for this page-->
-<script src="{{ asset('js/dashboard.js') }}"></script>
-<script src="{{ asset('js/Chart.roundedBarCharts.js') }}"></script>
-<!-- End custom js for this page-->
-@stack('scripts')
+<!-- All JS Custom Plugins Link Here here -->
+<script src="{{ asset('assets/app/js/vendor/modernizr-3.5.0.min.js') }}"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="{{ asset('assets/app/js/vendor/jquery-1.12.4.min.js') }}"></script>
+<script src="{{ asset('assets/app/js/popper.min.js') }}"></script>
+<script src="{{ asset('assets/app/js/bootstrap.min.js') }}"></script>
+<!-- Jquery Mobile Menu -->
+<script src="{{ asset('assets/app/js/jquery.slicknav.min.js') }}"></script>
+
+<!-- Jquery Slick , Owl-Carousel Plugins -->
+<script src="{{ asset('assets/app/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('assets/app/js/slick.min.js') }}"></script>
+<!-- Date Picker -->
+<script src="{{ asset('assets/app/js/gijgo.min.js') }}"></script>
+<!-- One Page, Animated-HeadLin -->
+<script src="{{ asset('assets/app/js/wow.min.js') }}"></script>
+<script src="{{ asset('assets/app/js/animated.headline.js') }}"></script>
+<script src="{{ asset('assets/app/js/jquery.magnific-popup.js') }}"></script>
+
+<!-- Breaking New Pluging -->
+<script src="{{ asset('assets/app/js/jquery.ticker.js') }}"></script>
+<script src="{{ asset('assets/app/js/site.js') }}"></script>
+
+<!-- Scrollup, nice-select, sticky -->
+<script src="{{ asset('assets/app/js/jquery.scrollUp.min.js') }}"></script>
+<script src="{{ asset('assets/app/js/jquery.nice-select.min.js') }}"></script>
+<script src="{{ asset('assets/app/js/jquery.sticky.js') }}"></script>
+
+<!-- contact js -->
+<script src="{{ asset('assets/app/js/contact.js') }}"></script>
+<script src="{{ asset('assets/app/js/jquery.form.js') }}"></script>
+<script src="{{ asset('assets/app/js/jquery.validate.min.js') }}"></script>
+<script src="{{ asset('assets/app/js/mail-script.js') }}"></script>
+<script src="{{ asset('assets/app/js/jquery.ajaxchimp.min.js') }}"></script>
+
+<!-- Jquery Plugins, main Jquery -->
+<script src="{{ asset('assets/app/js/plugins.js') }}"></script>
+<script src="{{ asset('assets/app/js/main.js') }}"></script>
 
 </body>
 
 </html>
-
